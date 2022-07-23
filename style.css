@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav {
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+
+}
+
+.game-cont {
+    font-family: 'Times New Roman', Times, serif;
+
+    display: grid;
+    grid-template-columns: repeat(3, 8vw);
+    grid-template-rows: repeat(3, 8vw);
+
+
+}
+
+.everyblock {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vw;
+}
+
+.everyblock:hover {
+    user-select: none;
+    cursor: pointer;
+    background-color: rgb(243, 235, 243);
+}
+
+
+
+
+
+.bt-0 {
+    border-top: none;
+}
+
+.bb-0 {
+    border-bottom: none;
+}
+
+.br-0 {
+    border-right: none;
+}
+
+.bl-0 {
+    border-left: none;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.full-cont {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-info * {
+    margin: 10px 10px;
+}
+
+.game-cont {
+    position: relative;
+}
+
+.turn {
+    margin-top: 1rem;
+    font-family: cursive;
+    font-size: xx-large;
+    border-bottom: 3px solid black;
+
+}
+
+#reset {
+    margin-top: 2rem;
+
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.linev{
+    position: absolute;
+    height: 24vw;
+    width: 2px;
+    background-color: red;
+}
+.lineh{
+    position: absolute;
+    height: 2px;
+    width: 24vw;
+    background-color: red;
+}
+.lined1{
+    position: absolute;
+    height: 2px;
+    width: 24vw;
+    background-color: red;
+    transform: rotate(45deg);
+}
+.lined2{
+    position: absolute;
+    height: 2px;
+    width: 24vw;
+    background-color: red;
+    transform: rotate(-45deg);
+}
+.v-1{
+    left: 16%;
+}
+.v-2{
+    left: 50%;
+}
+.v-3{
+    right: 16%;
+}
+.h-4{
+    top: 19%;
+}
+.h-5{
+    top: 52%;
+}
+.h-6{
+    bottom: 15%;
+}
+.d-7{
+
+    bottom: 48%;
+}
+.d-8{
+    bottom: 48%;
+
+}
+.dn{
+    display: none;
+}
+.alllines{
+
+    background-color: indigo;
+    /* border: 1px solid olive; */
+}
+.fire{
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+}
+.zi{
+
+    z-index: 5;
+}
+
+@media screen and (max-device-width: 450px) {
+
+    .game-cont {
+        font-family: 'Times New Roman', Times, serif;
+
+        display: grid;
+        grid-template-columns: repeat(3, 25vw);
+        grid-template-rows: repeat(3, 25vw);
+
+
+    }
+    nav{
+        font-size: large;
+    }
+
+    .everyblock {
+        font-size: 50px;
+    }
+
+    #reset {
+        margin-top: 5rem;
+        font-size: 30px;
+    }
+
+    .turn {
+        margin-top: 2rem;
+    }
+
+    .linev {
+        height: 75vw;
+
+    }
+
+    .lineh {
+        width: 75vw;
+    }
+
+    .lined1 {
+        width: 75vw;
+    }
+
+    .lined2 {
+        width: 75vw;
+    }
+
+}
